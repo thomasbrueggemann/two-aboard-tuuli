@@ -7,7 +7,7 @@
 	// ACTIVATE MENU
 	if(function_exists("register_nav_menus")) {
 	    register_nav_menus(array(
-	        "main-navi" => __("Hauptnavigation")
+	        "main-navi" => __("Mainmenu")
 	    ));
 	}
 
@@ -46,20 +46,10 @@
 		{
 			if($depth == 0)
 			{
-				if($item->type == "custom") 
-				{
-					$output .= "<li class=\"dropdown\">";
-					$output .= "<a class=\"dropdown-toggle\" data-toggle=\"dropdown\" data-hover=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">";
-					$output .= $item->title;
-					$output .= " <span class=\"caret\"></span></a>";
-				}
-				else 
-				{
-					$output .= "<li>";
-					$output .= "<a role=\"button\" href=\"" . $item->url . "\">";
-					$output .= $item->title;
-					$output .= "</a>";
-				}
+				$output .= "<li>";
+				$output .= "<a role=\"button\" href=\"" . $item->url . "\">";
+				$output .= $item->title;
+				$output .= "</a>";
 			}
 			else
 			{

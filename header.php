@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php bloginfo("stylesheet_directory"); ?>/css/font-awesome.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans:300,300italic,600,600italic|Pacifico:400|Pacifico:400&subset=latin" type="text/css">
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
 
