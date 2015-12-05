@@ -309,3 +309,14 @@ hr {
 	}
 }
 
+.aligncenter {
+	text-align: center;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.alignleft {
+	text-align: left;
+}
