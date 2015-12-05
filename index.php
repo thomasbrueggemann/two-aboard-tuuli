@@ -7,11 +7,40 @@
 			<?php get_sidebar(); ?>
     	</div>
     	<div class="col-md-8 col-md-offset-4 content">
+
     		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<h1><?php the_title(); ?></h1>
-			<h4>Posted on <?php the_time("F jS, Y") ?></h4>
-			<p><?php the_content(__("Read more...")); ?></p>
-			<hr> <?php endwhile; else: ?>
+
+    			<div class="row">
+	    			<div class="col-md-2 post-thumb">
+	    				<?php
+		    				// Check if the post has a Post Thumbnail assigned to it.
+							if(has_post_thumbnail()) {
+
+								echo '<a href="' . esc_url(get_permalink(get_the_ID())) . '">';
+
+								$thumb = get_the_post_thumbnail(get_the_ID(), "thumbnail");
+                                
+                                $dom = new DomDocument;
+                                $dom->loadXML($thumb);
+                                $imgs = $dom->getElementsByTagName("img");
+                                foreach($imgs as $img)
+                                {
+                                    echo "<img src=\"" . $img->getAttribute("src") . "\" />";
+                                    break;
+                                } 
+
+                                echo "</a>";
+							} 
+						?>
+	    			</div>
+	    			<div class="col-md-10">
+						<h2><a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>"><?php the_title(); ?></a></h2>
+						<h4><?php the_time("F jS, Y") ?></h4>
+						<p><?php the_content(__("Read more...")); ?></p>
+	    			</div>
+    			</div>
+    			<hr>
+			<?php endwhile; else: ?>
 			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>	
     	</div>	
 	</div>

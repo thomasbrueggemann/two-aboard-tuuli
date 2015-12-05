@@ -80,8 +80,16 @@ body {
 }
 
 .content {
-	padding: 0 4em 0 4em;
+	padding: 2em 8em 0 8em;
     word-wrap: break-word;
+}
+
+.content a {
+	color:#529ECC;
+}
+
+.content a:hover {
+	text-decoration: underline;
 }
 
 .content::after {
@@ -153,6 +161,7 @@ nav li a {
 
 nav li a:hover {
 	background-color:rgba(255,255,255,0.6)!important;
+	color:#529ECC!important;
 }
 
 .impressum {
@@ -165,3 +174,39 @@ nav li a:hover {
 	color:rgba(255,255,255,0.6)!important;
 }
 
+h1 {
+    font-family: "Pacifico", "Gibson", sans-serif;
+	font-weight: bold;
+	margin-top:0px;
+	font-size:2em;
+}
+
+h2 {
+    font-family: "Pacifico", "Gibson", sans-serif;
+	font-weight: bold;
+	margin-top:0px;
+	font-size:1.8em;
+}
+
+h2 a {
+	color:black!important;
+}
+
+h2 a:hover {
+	color:grey!important;
+	text-decoration:none;
+}
+
+h4 {
+	color:#bbb;
+	font-size: 0.9em!important;
+}
+
+.post-thumb img {
+	width:100%;
+	border-radius:4px;
+}
+
+hr {
+	margin:2em 0 2em 0;
+}
