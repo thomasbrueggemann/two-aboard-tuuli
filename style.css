@@ -1,0 +1,127 @@
+/*
+Theme Name: Two aboard Tuuli
+Theme URI: https://github.com/thomasbrueggemann/two-aboard-tuuli
+Description: Step aboard Tuuli, which means "wind" in Finnish. Join us in preparing our sailboat for longterm cruising and life's little sailing adventures in between.
+Version: 1.0
+Author: Thomas Brüggemann
+Author URI: http://thomasbrueggemann.com;
+Tags: two,aboard,tuuli,sailing
+*/
+
+html, body {
+	height:100%;
+}
+
+body {
+	background-color:#F9F9F9;
+	font-size: 16px;
+    line-height: 1.875em;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.logo {
+    line-height: 0;
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    background: url("img/logo.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin-top:4em;
+}
+
+.sidebar {
+	color: #ddd; 
+	background-color:#000;
+	height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    text-align: center;
+    padding: 0 2em 0 2em;
+}
+
+.cover_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("http://static.tumblr.com/93b0c8c0004caade13856b077efd5f7c/iwj39v5/9pQnt2lfh/tumblr_static_e43ifyznye8gg84kos84wwsoo_2048_v2.jpg");
+    opacity: .5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    padding-right: 1px;
+    width: 100%;
+    z-index: -1;
+}
+
+.title {
+	padding: 20px 0px 10px;
+}
+
+.title a {
+    font-family: "Pacifico", "Gibson", sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content {
+	padding: 0 4em 0 4em;
+    word-wrap: break-word;
+}
+
+.social{
+    padding-top: 26px;
+    text-align: center;
+}
+[class^="icon-"], [class*=" icon-"]{
+    font-family: sans-serif;
+}
+[class^="icon-"]::before, [class*=" icon-"]::before {
+    line-height: inherit;
+}
+.social a{
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px 6px;
+    padding: 0;
+    display: inline-block;
+    color: inherit;
+    border: 1px solid;
+    background: transparent;
+    text-decoration: none;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+.social a:hover{
+    color: #fff;
+}
+.icon-facebook{ background: #3b5998!important; border-color: #3b5998!important;}
+.icon-twitter{ background: #00aced!important; border-color: #00aced!important;}
+.icon-gplus{ background: #dd4b39!important; border-color: #dd4b39!important;}
+.icon-pinterest:hover{ background: #cb2027; border-color: #cb2027}
+.icon-flickr:hover{ background: #ff0084; border-color: #ff0084}
+.icon-instagram{ background: #517fa4!important; border-color: #517fa4!important;}
+.icon-youtube{ background: #bb0000!important; border-color: #bb0000!important;}
+.icon-vimeo:hover{ background: #00bf8f; border-color: #00bf8f}
+.icon-github:hover{ background: #171515; border-color: #171515}
+.icon-rss{ background: #ff6600!important; border-color: #ff6600!important;}
+.icon-feedly, .icon-feedly img {border:0px!important;}
+.icon-feedly {position:relative; top:-2px;}
