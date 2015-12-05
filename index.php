@@ -3,15 +3,15 @@
 <div class="container-fluid main">
 
 	<div class="row">
-    	<div class="col-md-4 sidebar">
+    	<div class="col-md-4 col-sm-4 sidebar">
 			<?php get_sidebar(); ?>
     	</div>
-    	<div class="col-md-8 col-md-offset-4 content">
+    	<div class="col-md-8 col-md-offset-4 col-sm-8 col-sm-offset-4 content">
 
     		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     			<div class="row">
-	    			<div class="col-md-2 post-thumb">
+	    			<div class="col-md-3 col-xs-4 post-thumb">
 	    				<?php
 		    				// Check if the post has a Post Thumbnail assigned to it.
 							if(has_post_thumbnail()) {
@@ -33,7 +33,7 @@
 							} 
 						?>
 	    			</div>
-	    			<div class="col-md-10">
+	    			<div class="col-md-9 col-xs-8">
 						<h2><a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>"><?php the_title(); ?></a></h2>
 						<h4><?php the_time("F jS, Y") ?></h4>
 						<p><?php the_content(__("Read more...")); ?></p>

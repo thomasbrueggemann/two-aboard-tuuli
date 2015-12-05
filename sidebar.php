@@ -1,12 +1,17 @@
+
+<button class="btn btn-default menu-toggle">
+	<i class="fa fa-bars"></i>
+</button>
+
 <div class="logo circle"></div>
 <div class="title">
 	<a href="/"><?php bloginfo("name"); ?></a>
 </div>
-<div class="description"><?php bloginfo("description"); ?></div>
+<div class="description hidden-xs"><?php bloginfo("description"); ?></div>
 
 <div class="cover_image" deluminate_imagetype="jpg"></div>
 
-<nav>
+<nav id="navi">
 	<?php
 		wp_nav_menu(array(
 			"theme_location" => "main-navi",
@@ -33,6 +38,6 @@
 	</a>
 </section>
 
-<div class="impressum">
+<div class="impressum hidden-xs">
 	<a href="/impressum">Impressum</a> | &copy; <?php echo date("Y") ?>
 </div>

@@ -36,18 +36,44 @@ body {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    margin-top:4em;
+    margin-top:2em;
+}
+
+@media (min-width: 768px) { 
+    .logo {
+    	margin-top:4em;
+	}
 }
 
 .sidebar {
 	color: #ddd; 
 	background-color:#000;
-	height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    position: fixed;
     text-align: center;
     padding: 0 2em 0 2em;
+    z-index:1;
+}
+
+.sidebar * {
+	z-index:1;
+}
+
+@media (min-width: 768px) { 
+    .sidebar {
+    	position: fixed;
+		height: 100%;
+	}
+}
+
+#navi {
+	display:none;
+}
+
+@media (min-width: 768px) { 
+	#navi {
+		display:block;
+	}
 }
 
 .cover_image {
@@ -80,8 +106,20 @@ body {
 }
 
 .content {
-	padding: 2em 8em 0 8em;
+	padding: 2em 0.5em 0 0.5em;
     word-wrap: break-word;
+}
+
+@media (min-width: 768px) { 
+    .content {
+		padding: 2em 2em 0 2em;
+	}
+}
+
+@media (min-width: 992px) { 
+    .content {
+		padding: 2em 8em 0 8em;
+	}        
 }
 
 .content a {
@@ -92,31 +130,43 @@ body {
 	text-decoration: underline;
 }
 
-.content::after {
-    content: "";
-    background:url("https://cloud.githubusercontent.com/assets/2313087/10067134/00f0cc22-629a-11e5-8ea9-987b623fe406.jpg");
-    background-repeat:no-repeat;
-    background-position: top right;
-    opacity: 0.02;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    z-index: -1;  
+@media (min-width: 768px) { 
+    .content::after {
+	    content: "";
+	    background:url("https://cloud.githubusercontent.com/assets/2313087/10067134/00f0cc22-629a-11e5-8ea9-987b623fe406.jpg");
+	    background-repeat:no-repeat;
+	    background-position: top right;
+	    opacity: 0.02;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    position: fixed;
+	    z-index: -1;  
+	}
 }
 
-.social{
+.social {
     padding-top: 26px;
+    margin-bottom:20px;
     text-align: center;
 }
+
+@media (min-width: 768px) { 
+    .social {
+	    margin-bottom: 0px;
+	}
+}
+
 [class^="icon-"], [class*=" icon-"]{
     font-family: sans-serif;
 }
+
 [class^="icon-"]::before, [class*=" icon-"]::before {
     line-height: inherit;
 }
-.social a{
+
+.social a {
     font-size: 14px;
     width: 30px;
     height: 30px;
@@ -132,9 +182,11 @@ body {
        -moz-border-radius: 50%;
             border-radius: 50%;
 }
+
 .social a:hover{
     color: #fff;
 }
+
 .icon-facebook{ background: #3b5998!important; border-color: #3b5998!important;}
 .icon-twitter{ background: #00aced!important; border-color: #00aced!important;}
 .icon-gplus{ background: #dd4b39!important; border-color: #dd4b39!important;}
@@ -174,6 +226,15 @@ nav li a:hover {
 	color:rgba(255,255,255,0.6)!important;
 }
 
+.footer .impressum {
+	text-align: center;
+	color:grey!important;
+}
+
+.footer .impressum a {
+	color:grey!important;
+}
+
 h1 {
     font-family: "Pacifico", "Gibson", sans-serif;
 	font-weight: bold;
@@ -210,3 +271,41 @@ h4 {
 hr {
 	margin:2em 0 2em 0;
 }
+
+.menu-toggle {
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:10000;
+	background-color: transparent;
+}
+
+.menu-toggle i {
+	color:white;
+}
+
+.menu-toggle:hover i {
+	color:#529ECC;
+	background-color:rgba(255,255,255,0.5);
+}
+
+@media (min-width: 768px) { 
+    .menu-toggle {
+    	display:none;
+	}
+}
+
+.claim {
+	display:none;
+}
+
+@media (min-width: 768px) { 
+    .claim {
+		display:block;
+		opacity: 0.5;
+		text-align: center;
+		margin:auto;
+		margin-bottom:40px;
+	}
+}
+
