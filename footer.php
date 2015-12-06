@@ -22,6 +22,6 @@
 		ga("create", "UA-15981085-15", "auto");
 		ga("send", "pageview");
     </script>
-    <script language="javascript1.1" src="http://www.sail-3d.com/toplist/add.js.php?id=2160405"></script>
+    <center><script language="javascript1.1" src="http://www.sail-3d.com/toplist/add.js.php?id=2160405"></script></center>
 </body>
 </html>
