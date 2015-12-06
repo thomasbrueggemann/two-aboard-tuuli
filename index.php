@@ -36,7 +36,7 @@
 	    			<div class="col-md-9 col-xs-8">
 						<h2><a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>"><?php the_title(); ?></a></h2>
 						<h4><?php the_time("F jS, Y") ?></h4>
-						<p><?php echo strip_tags(get_the_content()); ?></p>
+						<p><?php echo strip_tags(get_the_content("Read more...", true)); ?></p>
 	    			</div>
     			</div>
     			<hr>
