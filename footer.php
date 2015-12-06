@@ -6,7 +6,6 @@
 		</div>
 	</div>
 
-	<script src="<?php bloginfo("stylesheet_directory"); ?>/js/jquery-2.1.4.min.js"></script>
 	<script>
 		$(function() {
 			$(".menu-toggle").on("click", function() {
