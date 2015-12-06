@@ -110,6 +110,10 @@ body {
     word-wrap: break-word;
 }
 
+.content img {
+	max-width: 100%!important;
+}
+
 @media (min-width: 768px) { 
     .content {
 		padding: 2em 2em 0 2em;
