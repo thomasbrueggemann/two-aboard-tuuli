@@ -12,8 +12,6 @@
 	    		<h1><?php the_title(); ?></h1>	
 	    		<h4 style="margin:15px 0 30px 0"><?php the_time("F jS, Y") ?>, written by <?php the_author(); ?></h4>
 	    		<?php the_content(); ?>
-	    		<hr>
-	    		<p>Written by <?php the_author(); ?></p>
 	    	<?php endwhile; endif; ?>
     	</div>	
 	</div>
