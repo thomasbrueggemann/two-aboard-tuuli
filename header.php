@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="<?php bloginfo("description") ?>">
     <meta name="keywords" content="two aboard tuuli,tuuli,sailing,segeln,sailboat,segelboot,liveaboard,circumnavigate,cruising,bluewater,blauwasser">
-    <meta name="author" content="Thomas Brüggemann" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
