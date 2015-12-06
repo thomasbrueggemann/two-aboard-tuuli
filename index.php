@@ -35,7 +35,7 @@
 	    			</div>
 	    			<div class="col-md-9 col-xs-8">
 						<h2><a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>"><?php the_title(); ?></a></h2>
-						<h4><?php the_time("F jS, Y") ?></h4>
+						<h4><?php the_time("F jS, Y") ?>, written by <?php the_author(); ?></h4>
 						<p class="hidden-xs"><?php echo strip_tags(get_the_content(" [...]", true)); ?></p>
 	    			</div>
     			</div>
