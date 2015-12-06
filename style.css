@@ -326,3 +326,8 @@ hr {
 .alignleft {
 	text-align: left;
 }
+
+.top100sail {
+	margin-top:30px;
+	margin-bottom: 20px;
+}
