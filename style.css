@@ -135,6 +135,10 @@ body {
 	text-decoration: underline;
 }
 
+.content h2 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
 @media (min-width: 768px) { 
     .content::after {
 	    content: "";
