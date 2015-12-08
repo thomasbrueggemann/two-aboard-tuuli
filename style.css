@@ -32,7 +32,7 @@ body {
     width: 96px;
     height: 96px;
     margin: auto;
-    background: url("img/logo.jpg") no-repeat center center;
+    background: url("//i0.wp.com/wp.two-aboard-tuuli.com/wp-content/themes/two-aboard-tuuli/img/logo.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -82,7 +82,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url("http://static.tumblr.com/93b0c8c0004caade13856b077efd5f7c/iwj39v5/9pQnt2lfh/tumblr_static_e43ifyznye8gg84kos84wwsoo_2048_v2.jpg");
+    background-image: url("//static.tumblr.com/93b0c8c0004caade13856b077efd5f7c/iwj39v5/9pQnt2lfh/tumblr_static_e43ifyznye8gg84kos84wwsoo_2048_v2.jpg");
     opacity: .5;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,7 +143,7 @@ body {
 @media (min-width: 768px) { 
     .content::after {
 	    content: "";
-	    background:url("https://cloud.githubusercontent.com/assets/2313087/10067134/00f0cc22-629a-11e5-8ea9-987b623fe406.jpg");
+	    background:url("//cloud.githubusercontent.com/assets/2313087/10067134/00f0cc22-629a-11e5-8ea9-987b623fe406.jpg");
 	    background-repeat:no-repeat;
 	    background-position: top right;
 	    opacity: 0.02;
