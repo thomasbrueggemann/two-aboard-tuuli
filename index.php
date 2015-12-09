@@ -48,7 +48,7 @@
 			<? else: ?>
 			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>	
 
-			<center class="top100sail"><script language="javascript1.1" src="http://www.sail-3d.com/toplist/add.js.php?id=2160405"></script></center>
+			<!--<center class="top100sail"><script language="javascript1.1" src="http://www.sail-3d.com/toplist/add.js.php?id=2160405"></script></center>-->
     	</div>	
 	</div>
 </div>
