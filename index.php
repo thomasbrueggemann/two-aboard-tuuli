@@ -45,8 +45,7 @@
 			<div class="nav-next alignleft"><?php previous_posts_link("Newer posts"); ?></div>
 			<div class="nav-previous alignright"><?php next_posts_link("Older posts"); ?></div>
 
-			<? else: ?>
-			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>	
+			<?php endif; ?>	
 
 			<!--<center class="top100sail"><script language="javascript1.1" src="http://www.sail-3d.com/toplist/add.js.php?id=2160405"></script></center>-->
     	</div>	
