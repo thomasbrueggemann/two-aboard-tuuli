@@ -106,8 +106,9 @@ body {
 }
 
 .content {
-	padding: 2em 0.5em 0 0.5em;
+    padding: 2em 0.5em 0 0.5em;
     word-wrap: break-word;
+    text-align:justify;
 }
 
 .content img {
